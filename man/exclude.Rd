@@ -21,7 +21,7 @@ will be multiplied to obtain the upper cutoff value ( mean plus upper.std * std.
 \item{explicit}{Set to TRUE to get written info output from the funtion}
 }
 \value{
-vector A vector that contains NA in all slots in which the upper or lower
+A vector that contains NA in all slots in which the upper or lower
 bound were exceeded
 }
 \description{
@@ -42,5 +42,8 @@ min( v.clean, na.rm = TRUE )
 v.clean <- exclude( v, upper.std = 2, lower.abs = -1, explicit = TRUE )
 max( v.clean, na.rm = TRUE )
 min( v.clean, na.rm = TRUE )
+}
+\author{
+Tobias Heed
 }
 

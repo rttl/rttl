@@ -1,5 +1,6 @@
+#' @title
 #' Exclude extreme values from a vector
-#'
+#' @description
 #' Excludes high and low outliers from a vector.
 #' Criterion for exclusion is either a fixed upper/lower value,
 #' or a multiple of the standard deviation.
@@ -10,7 +11,7 @@
 #' will be multiplied to obtain the upper cutoff value ( mean plus upper.std * std.dev )
 #' @param lower.std Equivalent to upper.std for lower cutoff value
 #' @param explicit Set to TRUE to get written info output from the funtion
-#' @return vector A vector that contains NA in all slots in which the upper or lower
+#' @return A vector that contains NA in all slots in which the upper or lower
 #' bound were exceeded
 #' @examples
 #' v <- rnorm( 1000, 0, 1)
@@ -25,6 +26,7 @@
 #' v.clean <- exclude( v, upper.std = 2, lower.abs = -1, explicit = TRUE )
 #' max( v.clean, na.rm = TRUE )
 #' min( v.clean, na.rm = TRUE )
+#' @author Tobias Heed
 
 exclude <- function( vector, upper.abs = NA, lower.abs = NA,
                      upper.std = NA, lower.std = NA, explicit = FALSE ) {
