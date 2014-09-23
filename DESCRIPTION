@@ -1,9 +1,9 @@
 Package: rttl
-Title: What the package does (one line)
+Title: Helper functions of RtTL lab
 Version: 0.1
-Authors@R: "First Last <first.last@example.com> [aut, cre]"
-Description: What the package does (one paragraph)
+Authors@R: "Tobias Heed <tobias.heed.uhh@gmail.com> [aut, cre]"
+Description: Helper functions of RtTL lab
 Depends:
-    R (>= 3.1.1)
-License: What license is it under?
+    R (>= 3.0.2)
+License: GPL
 LazyData: true
