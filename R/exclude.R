@@ -27,6 +27,7 @@
 #' max( v.clean, na.rm = TRUE )
 #' min( v.clean, na.rm = TRUE )
 #' @author Tobias Heed
+#' @importFrom magrittr %>%
 
 exclude <- function( vector, upper.abs = NA, lower.abs = NA,
                      upper.std = NA, lower.std = NA, explicit = FALSE ) {
