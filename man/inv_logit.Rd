@@ -9,7 +9,7 @@ inv_logit(x)
 \item{x}{the logit that needs conversion back to original scale}
 }
 \value{
-vector
+vector with inverse logit values
 }
 \description{
 inverse logit
