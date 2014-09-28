@@ -20,6 +20,7 @@
 #' RanFix and fitted values (these should be distributed around 0)
 #' @return Returns a data frame with columns fixedFit, fitted, RanFix
 #' @author Tobias Heed, 2013-09-26
+#' @export
 
 glmm_fitted <- function( model, diagnostics = FALSE )
 {

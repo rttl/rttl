@@ -11,6 +11,7 @@
 #' s <- "col2"
 #' select_col( a, s )
 #' @author Tobias Heed
+#' @export
 select_col <- function( df, colName ) {
   return( df[ , names( df ) == colName ] )
 }

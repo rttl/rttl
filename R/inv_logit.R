@@ -9,6 +9,7 @@
 #' a <- log( 0.2 / (1 - 0.2) )
 #' inv_logit( a )
 #' @author Tobias Heed
+#' @export
 inv_logit <- function( x ) {
   return( exp( x )/( 1 + exp( x ) ) )
 }

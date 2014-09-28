@@ -7,6 +7,7 @@
 #' @param model An lmerMod or glmerMod object
 #' @return nothing
 #' @author Tobias Heed, 2013-09 or so
+#' @export
 
 mPrint <- function( model ) {
   # check whether correct class has been passed
