@@ -1,9 +1,11 @@
 Package: rttl
 Title: Helper functions of RtTL lab
-Version: 0.1
+Version: 0.11
 Authors@R: "Tobias Heed <tobias.heed.uhh@gmail.com> [aut, cre]"
 Description: Helper functions of RtTL lab
 Depends:
     R (>= 3.0.2)
 License: GPL
 LazyData: true
+Imports:
+dplyr
