@@ -1,15 +1,20 @@
 #' @title
 #' glmm_fitted
 #' @description
-#' Extracts the fitted values from a lmerMod or glmerMod model.
-#' In one data frame, it adds the fixed effects alone (as fixedFit,
+#' Extracts the fitted values from a lmerMod or glmerMod model for
+#' each line of the original data frame.
+#' In one column, it adds the fixed effects alone (as fixedFit,
 #' equivalent to fixef() ),
 #' fixed plus random (as fitted)
 #' and their difference (as RanFix)
 #' For a GLMM, it uses the inverse function to create values in the original
-#' scale, rather than in the link scale. So for example, if you have used
+#' scale, rather than in the link scale (e.g. inv logit for a logit link function).
+#' So for example, if you have used
 #' binary data that you want to interpret as percentages with a log link,
 #' then the inverse log is used here and you get "real" numbers back.
+#' The fix.inv.logit is equivalent to the marginal estimates of lsmeans.
+#' lsmeans also gives an estimate for the confidence interval (could be implemented
+#' here a well at some point...)
 #' @param model An lmerMod or glmerMod object
 #' @param diagnostics TRUE/FALSE for whether you want to see a plot for
 #' RanFix and fitted values (these should be distributed around 0)
