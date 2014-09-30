@@ -1,5 +1,5 @@
 #' @title
-#' select_col
+#' select a column in a data frame based on the name (as string)
 #' @description
 #' select a column of a data frame by giving a name as string
 #' @param df the data frame from which the column should be selected

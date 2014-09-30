@@ -1,5 +1,5 @@
 #' @title
-#' inv_logit
+#' inverse of a logit
 #' @description
 #' inverse logit
 #' use e.g. to plot GLMM results in the original scale (e.g. p or %)

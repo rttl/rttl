@@ -1,5 +1,5 @@
 #' @title
-#' mPrint
+#' somewhat enhanced print function for (G)LMM
 #' @description
 #' Prints the summary of an lmerMod or glmerMod plus:
 #' which optimizer was used, how many iterations were allowed for
