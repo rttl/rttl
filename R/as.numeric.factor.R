@@ -1,11 +1,11 @@
 #' @title
-#' select a column in a data frame based on the name (as string)
+#' turn a factor with number levels into the numbers themselves
 #' @description
-#' select a column of a data frame by giving a name as string
-#' @param df the data frame from which the column should be selected
-#' @param colName the name (string) of the column
-#' @return vector with selected column
-#' @example
+#' Make a factor whose levels are numbers (e.g. SOA) into a vector
+#' that contains these numbers not as factor levels, but as numerics.
+#' @param x the factor to be converted
+#' @return numeric vector
+#' @examples
 #' a <- factor( c( 1, 2, 1, 1, 1, 4, 7, 8 ) )
 #' as.numeric( a )
 #' as.numeric.factor( a )
