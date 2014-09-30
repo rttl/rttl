@@ -1,5 +1,5 @@
 #' @title
-#' glmm_fitted
+#' extract fixed and random components for each trial of a GLMM data set
 #' @description
 #' Extracts the fitted values from a lmerMod or glmerMod model for
 #' each line of the original data frame.
