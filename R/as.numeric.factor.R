@@ -12,6 +12,6 @@
 #' a <- data.frame( col1 = c( 1, 2, 3 ), col2 = c( 3, 4, 5 ) )
 #' @author http://stackoverflow.com/questions/3418128/how-to-convert-a-factor-to-an-integer-numeric-without-a-loss-of-information
 #' @export
-as.numeric.factor <- function(x) {
+as_numeric_factor <- function(x) {
   as.numeric(levels(x))[x]
 }
