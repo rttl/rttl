@@ -8,7 +8,7 @@
 #' @return nothing
 #' @author Tobias Heed, 2013-09 or so
 #' @export
-
+#' @import Matrix
 mPrint <- function( model ) {
   # check whether correct class has been passed
   if ( ( class( model ) != "glmerMod" ) & ( class( model ) != "lmerMod" ) ) {
